@@ -3,110 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KONG WEI Research Team | Team Homepage</title>
-  <meta name="description" content="孔伟团队主页，展示团队研究方向、成员与项目入口。" />
+  <title>ARMOR | Team Homepage</title>
+  <meta name="description" content="ARMOR 团队主页：AI Robustness, Model security, and Offensive-Defensive of RobotOS." />
   <style>
-    :root {
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #162033;
-      --muted: #5f6f86;
-      --line: #dde5f0;
-      --primary: #143768;
-      --accent: #2a63c7;
-      --soft: #eef4ff;
-      --shadow: 0 10px 30px rgba(18, 38, 63, 0.08);
-      --max: 1160px;
-      --radius: 22px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
-      color: var(--text);
-      line-height: 1.75;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(92%, var(--max)); margin: 0 auto; }
-    .nav {
-      position: sticky; top: 0; z-index: 100;
-      backdrop-filter: blur(12px);
-      background: rgba(245,247,251,0.88);
-      border-bottom: 1px solid rgba(221,229,240,0.9);
-    }
-    .nav-inner {
-      display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px 0;
-    }
-    .brand { font-size:1rem; font-weight:800; color:var(--primary); letter-spacing:.2px; white-space:nowrap; }
-    .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:.95rem; }
-    .hero { padding: 74px 0 36px; }
-    .hero-card, .card {
-      background: var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow);
-    }
-    .hero-card { padding: 42px; }
-    .eyebrow {
-      display:inline-block; padding:6px 12px; border-radius:999px; background:var(--soft); color:var(--accent);
-      border:1px solid #d8e6ff; font-size:.86rem; font-weight:700; margin-bottom:16px;
-    }
-    h1 {
-      margin:0 0 14px; font-size:clamp(2.2rem, 5vw, 4rem); line-height:1.08; letter-spacing:-.03em;
-    }
-    .subtitle { font-size:1.08rem; color:var(--muted); max-width:840px; margin-bottom:22px; }
-    .meta { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px; }
-    .pill {
-      padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--muted);
-      font-size:.92rem; font-weight:600;
-    }
-    .cta-row { display:flex; flex-wrap:wrap; gap:12px; }
-    .btn {
-      display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:14px;
-      font-weight:700; border:1px solid transparent; transition:.2s ease;
-    }
-    .btn-primary { background:var(--primary); color:#fff; }
-    .btn-primary:hover { text-decoration:none; transform:translateY(-1px); }
-    .btn-secondary { background:#fff; color:var(--primary); border-color:var(--line); }
-    section { padding: 16px 0; }
-    .section-head { margin: 24px 0 16px; }
-    .section-head h2 { margin:0 0 6px; font-size:1.72rem; letter-spacing:-.02em; }
-    .section-head p { margin:0; color:var(--muted); }
-    .grid-3, .grid-2 { display:grid; gap:18px; }
-    .grid-3 { grid-template-columns:repeat(3, 1fr); }
-    .grid-2 { grid-template-columns:repeat(2, 1fr); }
-    .card { padding: 24px; }
-    .card h3 { margin:0 0 10px; font-size:1.08rem; color:var(--primary); }
-    .card p, .card li { margin:0; color:var(--muted); }
-    .member-card {
-      display:flex; flex-direction:column; gap:14px;
-    }
-    .member-head { display:flex; align-items:center; gap:16px; }
-    .avatar {
-      width:72px; height:72px; border-radius:20px; display:flex; align-items:center; justify-content:center;
-      background:linear-gradient(135deg, #dbe7ff, #f8fbff); color:var(--accent); border:1px solid var(--line);
-      font-size:1.6rem; font-weight:800; flex:0 0 auto;
-    }
-    .member-name { font-size:1.18rem; font-weight:800; color:var(--text); }
-    .member-role { color:var(--muted); font-size:.95rem; }
-    .tag-row { display:flex; flex-wrap:wrap; gap:8px; }
-    .tag {
-      font-size:.82rem; padding:6px 10px; border-radius:999px; background:var(--soft); color:var(--accent);
-      border:1px solid #d8e6ff; font-weight:700;
-    }
-    .placeholder { color:#7a899d; font-style:italic; }
-    footer { padding:40px 0 64px; color:var(--muted); text-align:center; font-size:.95rem; }
-    @media (max-width: 980px) {
-      .grid-3, .grid-2 { grid-template-columns:1fr; }
-      .hero-card, .card { padding:26px; }
-      .nav-inner { align-items:flex-start; }
-    }
+    :root{--bg:#f5f7fb;--card:#fff;--text:#162033;--muted:#5f6f86;--line:#dde5f0;--primary:#143768;--accent:#2a63c7;--soft:#eef4ff;--shadow:0 10px 30px rgba(18,38,63,.08);--max:1160px;--radius:22px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#f8fbff 0%,var(--bg) 100%);color:var(--text);line-height:1.75}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{width:min(92%,var(--max));margin:0 auto}
+    .nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(12px);background:rgba(245,247,251,.88);border-bottom:1px solid rgba(221,229,240,.9)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}
+    .brand{font-size:1rem;font-weight:800;color:var(--primary);letter-spacing:.2px;white-space:nowrap}
+    .nav-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.95rem}
+    .hero{padding:74px 0 36px}
+    .hero-card,.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-card{padding:42px}
+    .eyebrow{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--soft);color:var(--accent);border:1px solid #d8e6ff;font-size:.86rem;font-weight:700;margin-bottom:16px}
+    h1{margin:0 0 14px;font-size:clamp(2.2rem,5vw,4rem);line-height:1.08;letter-spacing:-.03em}
+    .subtitle{font-size:1.08rem;color:var(--muted);max-width:860px;margin-bottom:22px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+    .pill{padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--muted);font-size:.92rem;font-weight:600}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:14px;font-weight:700;border:1px solid transparent;transition:.2s ease}
+    .btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{text-decoration:none;transform:translateY(-1px)}
+    .btn-secondary{background:#fff;color:var(--primary);border-color:var(--line)}
+    section{padding:16px 0}.section-head{margin:24px 0 16px}.section-head h2{margin:0 0 6px;font-size:1.72rem;letter-spacing:-.02em}.section-head p{margin:0;color:var(--muted)}
+    .grid-3,.grid-2{display:grid;gap:18px}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}
+    .card{padding:24px}.card h3{margin:0 0 10px;font-size:1.08rem;color:var(--primary)} .card p,.card li{margin:0;color:var(--muted)}
+    .member-card{display:flex;flex-direction:column;gap:14px}.member-head{display:flex;align-items:center;gap:16px}
+    .member-photo{border:1px solid var(--line);background:#fff;object-fit:cover;width:80px;height:96px;border-radius:18px;flex:0 0 auto}
+    .member-name{font-size:1.18rem;font-weight:800;color:var(--text)} .member-role{color:var(--muted);font-size:.95rem}
+    .tag-row{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:.82rem;padding:6px 10px;border-radius:999px;background:var(--soft);color:var(--accent);border:1px solid #d8e6ff;font-weight:700}
+    .placeholder{color:#7a899d;font-style:italic}
+    .list{margin:0;padding-left:1.2rem}
+    footer{padding:40px 0 64px;color:var(--muted);text-align:center;font-size:.95rem}
+    @media (max-width:980px){.grid-3,.grid-2{grid-template-columns:1fr}.hero-card,.card{padding:26px}.nav-inner{align-items:flex-start}}
   </style>
 </head>
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand">KONG WEI Research Team</div>
+      <div class="brand">ARMOR</div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -119,17 +56,15 @@
 
   <header class="hero container">
     <div class="hero-card">
-      <div class="eyebrow">Team Homepage · Embodied AI · Security · Multi-Agent Systems</div>
-      <h1>孔伟团队主页</h1>
-      <p class="subtitle">
-        本页面作为团队统一入口，展示团队研究方向、成员信息与项目布局。当前已接入<strong>孔伟 / KONG WEI</strong>个人主页，后续可以继续扩展团队成员、代表成果、项目、论文与招生信息。
-      </p>
+      <div class="eyebrow">AI Robustness · Model Security · Offensive-Defensive of RobotOS</div>
+      <h1>ARMOR</h1>
+      <p class="subtitle"><strong>ARMOR</strong> 全称为 <strong>AI Robustness, Model security, and Offensive-Defensive of RobotOS</strong>。团队名称概括了我们的核心研究目标：围绕人工智能鲁棒性、模型安全以及机器人系统攻防，构建兼具理论深度与实践价值的研究体系。</p>
       <div class="meta">
-        <span class="pill">浙江理工大学</span>
-        <span class="pill">具身多智能体</span>
-        <span class="pill">机器人操作系统安全</span>
-        <span class="pill">大模型安全测试</span>
-        <span class="pill">软件脆弱性检测</span>
+        <span class="pill">AI Robustness</span>
+        <span class="pill">Model Security</span>
+        <span class="pill">RobotOS Offensive-Defensive</span>
+        <span class="pill">AI Security</span>
+        <span class="pill">AI for Security</span>
       </div>
       <div class="cta-row">
         <a class="btn btn-primary" href="#members">View Team Members</a>
@@ -142,59 +77,62 @@
   <main class="container">
     <section id="about">
       <div class="section-head">
-        <h2>About the Team</h2>
-        <p>当前版本先搭建团队主页框架，便于后续继续补充正式名称、实验室简介、成员结构与代表性成果。</p>
+        <h2>About ARMOR</h2>
+        <p>团队主页作为统一入口，展示研究方向、成员信息与项目资源。当前版本已完成核心结构，后续可继续补充成员、论文、项目、招生与新闻动态。</p>
       </div>
       <div class="grid-2">
         <div class="card">
-          <h3>Team Overview</h3>
-          <p>
-            团队聚焦人工智能安全、具身智能、多智能体协作与软件系统安全，面向真实复杂环境中的智能系统可靠性、鲁棒性与可部署性问题，开展系统研究。
-          </p>
+          <h3>Team Vision</h3>
+          <p>ARMOR 致力于面向真实复杂场景中的智能系统安全问题，研究人工智能模型本身的鲁棒性与安全性，同时探索如何利用人工智能能力解决传统网络与软件安全问题。</p>
         </div>
         <div class="card">
-          <h3>Current Status</h3>
-          <p>
-            当前主页已完成团队入口页与个人主页分离：站点首页为团队主页，成员卡片可跳转至对应个人页面，后续扩展多人协作会更加方便。
-          </p>
+          <h3>Team Goal</h3>
+          <p>围绕“模型可信、系统可防、攻防可验证”展开研究，推动 AI 安全与安全智能化的深度融合，服务于高可靠智能系统与机器人系统的实际部署。</p>
         </div>
       </div>
     </section>
 
     <section id="research">
       <div class="section-head">
-        <h2>Research Areas</h2>
-        <p>以孔伟现有研究方向为核心，后续可继续扩充团队其他成员的方向标签。</p>
+        <h2>Research Tracks</h2>
+        <p>团队目前的研究方向主要可分为两类：<strong>AI security</strong> 与 <strong>AI for security</strong>。</p>
       </div>
-      <div class="grid-3">
-        <div class="card"><h3>具身多智能体高效协作</h3><p>研究大模型驱动下的多智能体协同感知、决策、规划与执行机制。</p></div>
-        <div class="card"><h3>机器人操作系统安全</h3><p>聚焦机器人系统通信、调度、感知与控制链路中的安全风险与防护方法。</p></div>
-        <div class="card"><h3>模型安全测试和修复</h3><p>围绕深度学习模型与大模型的鲁棒性、缺陷定位与自动化修复开展研究。</p></div>
-        <div class="card"><h3>对抗样本检测和防御</h3><p>研究对抗攻击识别、鲁棒增强与模型安全防护机制。</p></div>
-        <div class="card"><h3>开源框架脆弱性检测</h3><p>面向深度学习开源框架开展潜在实现缺陷与安全脆弱点检测。</p></div>
-        <div class="card"><h3>多智能体软件脆弱性检测</h3><p>利用多智能体与大模型提升软件漏洞发现、风险推理与分析效率。</p></div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>AI Security</h3>
+          <p>AI security 关注神经网络本身的脆弱性以及人工智能模型本身存在的安全问题，重点研究模型鲁棒性、安全测试、缺陷修复、对抗样本检测与防御，以及大模型与深度学习系统的安全机制。</p>
+        </div>
+        <div class="card">
+          <h3>AI for Security</h3>
+          <p>AI for security 关注利用人工智能技术解决传统安全问题，例如漏洞挖掘、软件脆弱性检测、自动化安全分析、攻防推理与风险识别，探索多智能体与大模型在安全领域的应用潜力。</p>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card"><h3>AI Robustness</h3><p>研究模型鲁棒性评估、对抗攻击与防御、可靠测试与修复增强。</p></div>
+        <div class="card"><h3>Model Security</h3><p>关注深度学习模型与大模型的安全风险、缺陷定位与防护机制。</p></div>
+        <div class="card"><h3>RobotOS Security</h3><p>聚焦机器人操作系统中的通信、调度、感知与控制链路的攻防问题。</p></div>
       </div>
     </section>
 
     <section id="members">
       <div class="section-head">
         <h2>Team Members</h2>
-        <p>点击成员卡片可进入对应个人主页。当前先接入你的个人主页，其他成员位置已预留。</p>
+        <p>点击成员卡片可进入对应个人主页。当前已接入孔伟老师个人主页，其他成员位置已预留。</p>
       </div>
       <div class="grid-3">
         <div class="card member-card">
           <div class="member-head">
-            <div class="avatar">KW</div>
+            <img class="member-photo" src="./assets/kongwei.jpg" alt="孔伟照片" />
             <div>
               <div class="member-name">孔伟 / KONG WEI</div>
               <div class="member-role">浙江理工大学</div>
             </div>
           </div>
-          <p>研究方向包括具身多智能体协作、机器人操作系统安全、大模型安全测试和软件脆弱性检测等。</p>
+          <p>研究重点围绕大模型驱动的具身多智能体高效协作、机器人操作系统安全、模型安全测试与修复、对抗防御以及基于多智能体的软件脆弱性检测。</p>
           <div class="tag-row">
             <span class="tag">Faculty</span>
             <span class="tag">AI Security</span>
-            <span class="tag">Multi-Agent Systems</span>
+            <span class="tag">AI for Security</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="./kongwei.html">进入个人主页</a>
@@ -203,30 +141,26 @@
 
         <div class="card member-card">
           <div class="member-head">
-            <div class="avatar">＋</div>
+            <div class="member-photo" style="display:flex;align-items:center;justify-content:center;color:#2a63c7;font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,#dbe7ff,#f8fbff)">+</div>
             <div>
               <div class="member-name">Member Slot 2</div>
               <div class="member-role placeholder">待补充</div>
             </div>
           </div>
-          <p class="placeholder">后续可在这里加入博士生、硕士生、访问学生或合作研究人员，并链接其个人页面。</p>
-          <div class="tag-row">
-            <span class="tag">To Update</span>
-          </div>
+          <p class="placeholder">后续可加入博士生、硕士生、访问学生或合作研究人员，并链接其个人主页。</p>
+          <div class="tag-row"><span class="tag">To Update</span></div>
         </div>
 
         <div class="card member-card">
           <div class="member-head">
-            <div class="avatar">＋</div>
+            <div class="member-photo" style="display:flex;align-items:center;justify-content:center;color:#2a63c7;font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,#dbe7ff,#f8fbff)">+</div>
             <div>
               <div class="member-name">Member Slot 3</div>
               <div class="member-role placeholder">待补充</div>
             </div>
           </div>
           <p class="placeholder">可继续扩展团队成员、联合培养学生、校外合作人员等信息。</p>
-          <div class="tag-row">
-            <span class="tag">To Update</span>
-          </div>
+          <div class="tag-row"><span class="tag">To Update</span></div>
         </div>
       </div>
     </section>
@@ -239,7 +173,11 @@
       <div class="grid-2">
         <div class="card">
           <h3>Projects</h3>
-          <p class="placeholder">项目列表待补充</p>
+          <ul class="list">
+            <li class="placeholder">项目列表待补充</li>
+            <li class="placeholder">代表成果待补充</li>
+            <li class="placeholder">新闻动态待补充</li>
+          </ul>
         </div>
         <div class="card">
           <h3>Resources</h3>
@@ -267,9 +205,7 @@
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 KONG WEI Research Team. The site root is the team homepage and links to personal member pages.
-    </div>
+    <div class="container">© 2026 ARMOR. The site root is the team homepage and links to personal member pages.</div>
   </footer>
 </body>
 </html>
